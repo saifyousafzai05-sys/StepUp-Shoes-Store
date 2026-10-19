@@ -1,25 +1,29 @@
+
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore stylish, comfortable shoes at StepUp. Discover running shoes, casual sneakers, and fashion footwear.">
     <title>StepUp | Shoes Store</title>
     <link rel="stylesheet" href="index.css">
 </head>
-
 <body>
 
     <!-- Navbar -->
     <header class="header">
         <div class="container navbar">
-            <a href="#" class="logo">Step<span>Up.</span></a>
-            <nav class="nav-links">
-                <a href="#home"><b>Home</b></a>
-                <a href="#features"><b>Collection</b></a>
-                <a href="#about"><b>About</b></a>
-                <a href="#contact"><b>Contact</b></a>
+            <a href="#home" class="logo">Step<span>Up.</span></a>
+
+            <nav class="nav-links" aria-label="Main navigation">
+                <a href="#home">Home</a>
+                <a href="#features">Collection</a>
+                <a href="#about">About</a>
+                <a href="#testimonials">Reviews</a>
+                <a href="#faqs">FAQs</a>
+                <a href="#contact">Contact</a>
             </nav>
+
             <div class="auth-buttons">
                 <a href="#" class="login-btn">Login</a>
                 <a href="#" class="btn">Sign Up</a>
@@ -31,148 +35,219 @@
         <!-- Hero Section -->
         <section class="hero" id="home">
             <div class="container hero-content">
-
                 <div class="hero-text">
                     <p class="tagline">NEW COLLECTION 2026</p>
                     <h1>Step Into <span>Your Style.</span></h1>
                     <p class="hero-description">
-                        Discover comfortable and stylish shoes
-                        designed for your everyday adventures.
+                        Discover comfortable and stylish shoes designed for your everyday adventures.
                         Find your perfect pair today.
                     </p>
-                    <a href="#features" class="btn hero-btn">
-                        Shop Collection
-                    </a>
+                    <a href="#features" class="btn hero-btn">Shop Collection &rarr;</a>
                 </div>
                 <div class="hero-image">
-                    <img src="Top.jpg" alt="Red sports shoe">
+                    <img src="Top.jpg" alt="Red sports shoe" fetchpriority="high">
                 </div>
             </div>
         </section>
 
-        <!-- Features Section -->
+        <!-- Featured Collection -->
         <section class="features section" id="features">
-
             <div class="container">
-
                 <div class="section-heading">
                     <p class="tagline">OUR COLLECTION</p>
                     <h2>Featured Shoes</h2>
-                    <p>
-                        Explore our latest collection of
-                        comfortable and fashionable shoes.
-                    </p>
+                    <p>Explore our latest collection of comfortable and fashionable shoes.</p>
                 </div>
 
                 <div class="features-container">
-                    
                     <article class="feature-card">
-                        <img src="Running.jpg" alt="Red running shoe">
+                        <img src="Running.jpg" alt="Red running shoe" loading="lazy">
                         <h3>Running Shoes</h3>
-                        <p>
-                            Lightweight and comfortable shoes
-                            for running and daily activities.
-                        </p>
+                        <p>Lightweight and comfortable shoes for running and daily activities.</p>
                     </article>
-
                     <article class="feature-card">
-                        <img src="Casual.jpg" alt="Casual sneakers">
+                        <img src="Casual.jpg" alt="Casual sneakers" loading="lazy">
                         <h3>Casual Sneakers</h3>
-                        <p>
-                            Modern sneakers designed for
-                            everyday comfort and style.
-                        </p>
+                        <p>Modern sneakers designed for everyday comfort and style.</p>
                     </article>
-
                     <article class="feature-card">
-                        <img src="Fashion.jpg" alt="Fashion shoes">
-
+                        <img src="Fashion.jpg" alt="Fashion shoes" loading="lazy">
                         <h3>Fashion Shoes</h3>
-                        <p>
-                            Stylish footwear that matches
-                            your personality and lifestyle.
+                        <p>Stylish footwear that matches your personality and lifestyle.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- About -->
+        <section class="about section" id="about">
+            <div class="container about-container">
+                <div class="about-image">
+                    <img src="About.jpg" alt="Stylish sneakers" loading="lazy">
+                </div>
+                <div class="about-text">
+                    <p class="tagline">ABOUT OUR BRAND</p>
+                    <h2>Comfort Meets Style</h2>
+                    <p>At StepUp, we believe that every great journey starts with the right pair of shoes.</p>
+                    <p>Our goal is to provide high-quality, comfortable, and stylish footwear for everyone.</p>
+                    <a href="#contact" class="btn">Learn More &rarr;</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials: sample reviews, replace with real customer feedback before launch -->
+        <section class="testimonials section" id="testimonials">
+            <div class="container">
+                <div class="section-heading">
+                    <p class="tagline">CUSTOMER LOVE</p>
+                    <h2>What Our Customers Say</h2>
+                    <p>A glimpse of the StepUp experience.</p>
+                </div>
+
+                <div class="testimonials-container">
+                    <article class="testimonial-card">
+                        <div class="review-heading">
+                            <span class="quote-mark" aria-hidden="true">&ldquo;</span>
+                            <span class="stars" aria-label="5 out of 5 stars">★★★★★</span>
+                        </div>
+                        <p class="review-text">
+                            "Absolutely love my new sneakers! They're super comfortable and look
+                            amazing with every outfit. Definitely shopping here again!"
                         </p>
+                        <div class="customer">
+                            <div class="avatar avatar-one" aria-hidden="true">SA</div>
+                            <div class="customer-info">
+                                <h3>Sarah Ahmed</h3>
+                                <span>StepUp Customer</span>
+                            </div>
+                        </div>
                     </article>
 
+                    <article class="testimonial-card featured">
+                        <div class="review-heading">
+                            <span class="quote-mark" aria-hidden="true">&ldquo;</span>
+                            <span class="stars" aria-label="5 out of 5 stars">★★★★★</span>
+                        </div>
+                        <p class="review-text">
+                            "The quality is fantastic for the price. I wear my running shoes
+                            every morning and they still feel great. Highly recommended!"
+                        </p>
+                        <div class="customer">
+                            <div class="avatar avatar-two" aria-hidden="true">AK</div>
+                            <div class="customer-info">
+                                <h3>Ali Khan</h3>
+                                <span>StepUp Customer</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="testimonial-card">
+                        <div class="review-heading">
+                            <span class="quote-mark" aria-hidden="true">&ldquo;</span>
+                            <span class="stars" aria-label="5 out of 5 stars">★★★★★</span>
+                        </div>
+                        <p class="review-text">
+                            "Beautiful designs and a perfect fit! The shoes are lightweight,
+                            stylish, and comfortable. StepUp has become my favorite shoe store."
+                        </p>
+                        <div class="customer">
+                            <div class="avatar avatar-three" aria-hidden="true">FM</div>
+                            <div class="customer-info">
+                                <h3>Fatima Malik</h3>
+                                <span>StepUp Customer</span>
+                            </div>
+                        </div>
+                    </article>
                 </div>
             </div>
         </section>
 
-        <!-- About Section -->
-        <section class="about section" id="about">
-
-            <div class="container about-container">
-
-                <div class="about-image">
-                    <img src="About.jpg" alt="Stylish sneakers">
+        <!-- Frequently Asked Questions -->
+        <section class="faq section" id="faqs">
+            <div class="container faq-container">
+                <div class="faq-intro">
+                    <p class="tagline">NEED HELP?</p>
+                    <h2>Frequently Asked Questions</h2>
+                    <p>Everything you need to know about shopping with StepUp. Can't find your answer? We're happy to help.</p>
+                    <a href="#contact" class="btn">Contact Us &rarr;</a>
                 </div>
 
-                <div class="about-text">
+                <div class="faq-list">
+                    <details class="faq-item" name="stepup-faq" open>
+                        <summary>How can I order shoes from StepUp?</summary>
+                        <div class="faq-answer">
+                            <p>Browse our collection, choose a design and size, and proceed to checkout when ordering is available.</p>
+                        </div>
+                    </details>
 
-                    <p class="tagline">ABOUT OUR BRAND</p>
+                    <details class="faq-item" name="stepup-faq">
+                        <summary>How long does delivery take?</summary>
+                        <div class="faq-answer">
+                            <p>Delivery time depends on your location. Your expected delivery date will be shared when you place your order.</p>
+                        </div>
+                    </details>
 
-                    <h2>Comfort Meets Style</h2>
+                    <details class="faq-item" name="stepup-faq">
+                        <summary>Can I return or exchange my shoes?</summary>
+                        <div class="faq-answer">
+                            <p>Return and exchange options depend on our current store policy. Contact us with your order details for help.</p>
+                        </div>
+                    </details>
 
-                    <p>
-                        At StepUp, we believe that every great
-                        journey starts with the right pair
-                        of shoes.
-                    </p>
+                    <details class="faq-item" name="stepup-faq">
+                        <summary>How do I choose the correct shoe size?</summary>
+                        <div class="faq-answer">
+                            <p>Measure your foot length and compare it with the product's size chart before selecting your pair.</p>
+                        </div>
+                    </details>
 
-                    <p>
-                        Our goal is to provide high-quality,
-                        comfortable, and stylish footwear
-                        for everyone.
-                    </p>
+                    <details class="faq-item" name="stepup-faq">
+                        <summary>Do you offer cash on delivery?</summary>
+                        <div class="faq-answer">
+                            <p>Available payment methods depend on your location and will be shown during checkout.</p>
+                        </div>
+                    </details>
 
-                    <a href="#contact" class="btn">
-                        Learn More
-                    </a>
-
+                    <details class="faq-item" name="stepup-faq">
+                        <summary>How can I contact customer support?</summary>
+                        <div class="faq-answer">
+                            <p>Reach out through our contact and social media links, and our team can help answer your questions.</p>
+                        </div>
+                    </details>
                 </div>
-
             </div>
         </section>
-
     </main>
 
     <!-- Footer -->
     <footer class="footer" id="contact">
-
         <div class="container footer-container">
-
             <div class="footer-brand">
                 <h2>StepUp.</h2>
-                <p>
-                    Your perfect shoes for every step.
-                </p>
+                <p>Your perfect shoes for every step.</p>
             </div>
 
             <div class="footer-links">
                 <h3>Quick Links</h3>
-
                 <a href="#home">Home</a>
                 <a href="#features">Collection</a>
                 <a href="#about">About</a>
+                <a href="#testimonials">Reviews</a>
+                <a href="#faqs">FAQs</a>
                 <a href="#contact">Contact</a>
             </div>
 
             <div class="footer-links">
                 <h3>Follow Us</h3>
-
-                <a href="https://www.instagram.com/">Instagram</a>
-                <a href="https://www.facebook.com/">Facebook</a>
-                <a href="https://www.linkedin.com/">LinkedIn</a>
+                <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">Instagram</a>
+                <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer">Facebook</a>
+                <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
             </div>
-
         </div>
 
         <div class="copyright">
             <p>&copy; 2026 StepUp. All Rights Reserved.</p>
         </div>
-
     </footer>
-
 </body>
-
 </html>
